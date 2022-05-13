@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E4CBA50D-B4C0-403C-9C84-636C322B0760}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Horse</RootNamespace>
+    <AssemblyName>Horse</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admindannieclienta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admindannieclienta.Designer.cs">
+      <DependentUpon>admindannieclienta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admindanniesotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admindanniesotr.Designer.cs">
+      <DependentUpon>admindanniesotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ammudan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ammudan.Designer.cs">
+      <DependentUpon>ammudan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ammuvnesti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ammuvnesti.Designer.cs">
+      <DependentUpon>ammuvnesti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="amunchik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amunchik.Designer.cs">
+      <DependentUpon>amunchik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Auth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Auth.Designer.cs">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bazabron.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bazabron.Designer.cs">
+      <DependentUpon>bazabron.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bazadanonomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bazadanonomer.Designer.cs">
+      <DependentUpon>bazadanonomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BazaOtd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BazaOtd.Designer.cs">
+      <DependentUpon>BazaOtd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bazarasp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bazarasp.Designer.cs">
+      <DependentUpon>bazarasp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBank.cs" />
+    <Compile Include="DataBase.cs" />
+    <Compile Include="delKlient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delKlient.Designer.cs">
+      <DependentUpon>delKlient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dellosh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dellosh.Designer.cs">
+      <DependentUpon>dellosh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delsotr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delsotr.Designer.cs">
+      <DependentUpon>delsotr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dennik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dennik.Designer.cs">
+      <DependentUpon>dennik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Konush.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Konush.Designer.cs">
+      <DependentUpon>Konush.cs</DependentUpon>
+    </Compile>
+    <Compile Include="koval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="koval.Designer.cs">
+      <DependentUpon>koval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kovalrasp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kovalrasp.Designer.cs">
+      <DependentUpon>kovalrasp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kovalzapis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kovalzapis.Designer.cs">
+      <DependentUpon>kovalzapis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="levadi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="levadi.Designer.cs">
+      <DependentUpon>levadi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="levadirasp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="levadirasp.Designer.cs">
+      <DependentUpon>levadirasp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LevadiVnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LevadiVnos.Designer.cs">
+      <DependentUpon>LevadiVnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loshdannie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loshdannie.Designer.cs">
+      <DependentUpon>loshdannie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loshreg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loshreg.Designer.cs">
+      <DependentUpon>loshreg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manej.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manej.Designer.cs">
+      <DependentUpon>Manej.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manejraspis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manejraspis.Designer.cs">
+      <DependentUpon>Manejraspis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManejVnestiTren.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManejVnestiTren.Designer.cs">
+      <DependentUpon>ManejVnestiTren.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Otdelenie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Otdelenie.Designer.cs">
+      <DependentUpon>Otdelenie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="publicperem.cs" />
+    <Compile Include="RegClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegClient.Designer.cs">
+      <DependentUpon>RegClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegEmp.Designer.cs">
+      <DependentUpon>RegEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uborkadannie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uborkadannie.Designer.cs">
+      <DependentUpon>uborkadannie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="uborkagraphic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uborkagraphic.Designer.cs">
+      <DependentUpon>uborkagraphic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="veterinar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veterinar.Designer.cs">
+      <DependentUpon>veterinar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vetrasp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vetrasp.Designer.cs">
+      <DependentUpon>vetrasp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vetzap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vetzap.Designer.cs">
+      <DependentUpon>vetzap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vnestiuborku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vnestiuborku.Designer.cs">
+      <DependentUpon>vnestiuborku.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admindannieclienta.resx">
+      <DependentUpon>admindannieclienta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admindanniesotr.resx">
+      <DependentUpon>admindanniesotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ammudan.resx">
+      <DependentUpon>ammudan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ammuvnesti.resx">
+      <DependentUpon>ammuvnesti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amunchik.resx">
+      <DependentUpon>amunchik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Auth.resx">
+      <DependentUpon>Auth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bazabron.resx">
+      <DependentUpon>bazabron.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bazadanonomer.resx">
+      <DependentUpon>bazadanonomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BazaOtd.resx">
+      <DependentUpon>BazaOtd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bazarasp.resx">
+      <DependentUpon>bazarasp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delKlient.resx">
+      <DependentUpon>delKlient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dellosh.resx">
+      <DependentUpon>dellosh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delsotr.resx">
+      <DependentUpon>delsotr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dennik.resx">
+      <DependentUpon>dennik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konush.resx">
+      <DependentUpon>Konush.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="koval.resx">
+      <DependentUpon>koval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kovalrasp.resx">
+      <DependentUpon>kovalrasp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kovalzapis.resx">
+      <DependentUpon>kovalzapis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="levadi.resx">
+      <DependentUpon>levadi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="levadirasp.resx">
+      <DependentUpon>levadirasp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LevadiVnos.resx">
+      <DependentUpon>LevadiVnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loshdannie.resx">
+      <DependentUpon>loshdannie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loshreg.resx">
+      <DependentUpon>loshreg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manej.resx">
+      <DependentUpon>Manej.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manejraspis.resx">
+      <DependentUpon>Manejraspis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManejVnestiTren.resx">
+      <DependentUpon>ManejVnestiTren.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Otdelenie.resx">
+      <DependentUpon>Otdelenie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegClient.resx">
+      <DependentUpon>RegClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegEmp.resx">
+      <DependentUpon>RegEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uborkadannie.resx">
+      <DependentUpon>uborkadannie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uborkagraphic.resx">
+      <DependentUpon>uborkagraphic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veterinar.resx">
+      <DependentUpon>veterinar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vetrasp.resx">
+      <DependentUpon>vetrasp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vetzap.resx">
+      <DependentUpon>vetzap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vnestiuborku.resx">
+      <DependentUpon>vnestiuborku.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
